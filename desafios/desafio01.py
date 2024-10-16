@@ -1,4 +1,2 @@
-nome = input('Digite seu nome:')
-msg1 = 'olá',nome,'! Seja bem vindo'
-
-print(msg1)
+num1 = print(input("Digite um numero"))
+num2 = print(input("Digite um numero"))
