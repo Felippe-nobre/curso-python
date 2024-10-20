@@ -1,2 +1,3 @@
-num1 = print(input("Digite um numero"))
-num2 = print(input("Digite um numero"))
+nome = str(input("Qual seu nome? "))
+idade = int(input("Qual sua idade? "))
+print("olá "  + nome + " você tem ", idade, " anos ")
