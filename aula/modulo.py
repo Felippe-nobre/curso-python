@@ -16,3 +16,9 @@ print(meu_modulo.saudacao("Felippe"))
 import requests
 response = requests.get("https://api.github.com")
 print(response.status_code)  # Saída: 200
+
+'''
+Principais bibliotecas do Python
+- **NumPy**: Trabalhando com arrays e operações matemáticas.
+- **Pandas**: Manipulação e análise de dados.
+'''
