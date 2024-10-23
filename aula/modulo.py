@@ -13,3 +13,6 @@ print(m.sqrt(25))
 import meu_modulo   #Assim como o Python oferece módulos, você também pode criar os seus. Basta criar um arquivo .py com funções e variáveis que deseja reutilizar.
 print(meu_modulo.saudacao("Felippe"))
 
+import requests
+response = requests.get("https://api.github.com")
+print(response.status_code)  # Saída: 200
