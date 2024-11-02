@@ -21,3 +21,35 @@ dados = {
 
 df = pd.DataFrame(dados)
 print(df)
+
+# Manipulação de dados com Pandas
+#Uma das grandes vantagens do Pandas é a facilidade com que você pode manipular dados. Vamos explorar algumas operações comuns.
+print(df["Nome"])#Para selecionar uma coluna, use df['NomeColuna']:
+
+print(df.iloc[0])#Para selecionar linhas, use iloc (baseado em índices) ou loc (baseado em rótulos):
+print(df[df["Idade"] > 30])
+
+# Adicionando e removendo colunas
+#Você pode adicionar uma nova coluna ao DataFrame de forma simples:
+df["Profissão"] = ["Engenheira", "Advogado", "Progamador"]
+print(df)
+df = df.drop(columns=["Cidade"])# drop: utilizado para remover colunas
+print(df)
+
+#Operações de agrupamento e agregação
+#O Pandas facilita a análise de dados agrupando e agregando informações, o que é útil para criar relatórios e estatísticas.
+dados_vendas = {
+    "Vendedor": ["Ana", "Ana", "João", "Maria", "Maria"],
+    "Vendas": [200, 150, 300, 400, 350]
+}
+df_vendas = pd.DataFrame(dados_vendas)
+
+agrupado = df_vendas.groupby("Vendedor").sum()
+print(agrupado)
+
+#Leitura e escrita de arquivos
+#O Pandas facilita a leitura e escrita de arquivos em diferentes formatos, como CSV, Excel, JSON, entre outros.
+df.to_csv("saida.csv", index=False)
+
+df_csv = pd.read_csv("arquivo.csv")
+print(df_csv.head())
