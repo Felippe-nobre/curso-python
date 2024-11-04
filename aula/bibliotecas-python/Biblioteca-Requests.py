@@ -30,11 +30,11 @@ Além de `GET` e `POST`, Requests também suporta outros métodos HTTP, como:
 - **DELETE**: Usado para excluir dados em um servidor.'''
 
 # Exemplo de requisição PUT
-response_put = req.put("<https://jsonplaceholder.typicode.com/posts/1>", json={"title": "Novo título"})
+response_put = req.put("https://jsonplaceholder.typicode.com/posts/1", json={"title": "Novo título"})
 print(response_put.status_code)
 
 # Exemplo de requisição DELETE
-response_delete = req.delete("<https://jsonplaceholder.typicode.com/posts/1>")
+response_delete = req.delete("https://jsonplaceholder.typicode.com/posts/1")
 print(response_delete.status_code)
 
 ## Trabalhando com parâmetros e cabeçalhos
