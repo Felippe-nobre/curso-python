@@ -36,7 +36,6 @@ print(response_put.status_code)
 # Exemplo de requisição DELETE
 response_delete = req.delete("https://jsonplaceholder.typicode.com/posts/1")
 print(response_delete.status_code)
-
 ## Trabalhando com parâmetros e cabeçalhos
 
 #Você pode passar **parâmetros** e **cabeçalhos** nas requisições para obter resultados específicos ou enviar informações adicionais.'''
